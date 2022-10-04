@@ -1,0 +1,160 @@
+body{
+	background-color:#ffffff;
+	color:#000000;
+	font:11px verdana,sans-serif;
+	overflow:auto;
+	margin:0
+}
+.tabtytul
+{ /* tabelka z grafikš (nagłówek) */
+	background-color:#7b90d5;
+}
+.tytul
+{ /* komórka z tytułem */
+	background-color:#7b90d5;
+	color:#ffffff;
+	height:80px;
+	font:bold 36px verdana,sans-serif;
+	text-align:center;
+}
+.tabela
+{
+	border: none;
+}
+td
+{
+	font-size:11px;
+	border: none;
+}
+th
+{
+	background-color:#e1e6f5;
+	color:#2e448f;
+	font-size:13px;
+	border: none;
+}
+td.g{ /* godzina */
+	background-color:#f0f2fa;
+	color:#2e448f;
+	font-weight:bold;
+	vertical-align:top;
+	text-align:center;
+	white-space:nowrap}
+td.nr{ /* numer lekcji */
+	background-color:#e1e6f5;
+	color:#2e448f;
+	font-weight:bold;
+	text-align:center;
+	vertical-align:top}
+td.l{ /* lekcja */
+	background-color:#ffffff;
+	color:#000000;
+	vertical-align:top}
+a.n{ /* nauczyciel */
+	color:#2e448f}
+a.s{ /* sala */
+	color:#2e448f}
+a.k{ /* klasa */
+	color:#2e448f}
+.p{ /* przedmiot */
+	color:#000000;
+	font-weight:bold}
+.op{ /* napis */
+	font:10px verdana,sans-serif}
+@media print{
+.tabtytul{ /* nagłówek do druku */
+	display:none}
+}
+
+.greyed
+{
+	opacity: 0.25;
+}
+
+/* Site styles */
+body
+{
+	white-space: nowrap;
+	background: #c0cdf9;
+	display: grid;
+	grid-template-columns: repeat(2, auto);
+}
+aside
+{
+	width: 100px;
+	text-align: center;
+	padding: 1em 0 5em;
+	background: #7b90d5;
+	scrollbar-color: #555 #7b90d5;
+  	scrollbar-width: thin;
+}
+aside::-webkit-scrollbar
+{
+	width: 8px;
+}
+
+.main, aside
+{
+  max-height: 100vh;
+  overflow: auto;
+	box-sizing: border-box;
+}
+
+.main
+{
+	display: grid;
+	grid-template-columns: repeat(2, auto);
+	padding: 1rem;
+}
+
+.table
+{
+	margin-bottom: 1em;
+	grid-column: 1 / 3;
+}
+
+/* Track */
+aside::-webkit-scrollbar-track
+{
+	background: #7b90d5;
+}
+  
+/* Handle */
+aside::-webkit-scrollbar-thumb
+{
+	background: #555;
+}
+aside::-webkit-scrollbar-thumb:active
+{
+	background: #888;
+}
+
+aside > a
+{
+	display: block;
+	line-height: 2;
+	padding: 0 1em;
+	color: #FFF;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+tr:nth-child(2n+1) td.l
+{
+	background: #F0F2FA;
+}
+
+.groups > div
+{
+	display: inline-block;
+	vertical-align: top;
+	padding: 0 1em;
+}
+.groups label
+{
+	display: block;
+}
+.groups
+{
+	display: inline-block;
+}
