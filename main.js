@@ -1,4 +1,4 @@
-let re = /^\s*(?<subject>.+?)(?: (?<group>[LKĆPW]\S*?))?(?:-\(?(?<week>[NnPp])\)?\d*)? (?<lecturer>\S+) (?<room>.+)\s*$/m;
+let re = /^\s*(?<subject>.+?)(?: (?<group>[LKĆPWS]\S*?))?(?:-\(?(?<week>[NnPp])\)?\d*)?\.? (?<lecturer>\S+) (?<room>.+)\s*$/m;
 
 let groups = {};
 let groupsDiv = document.querySelector(".groups");
